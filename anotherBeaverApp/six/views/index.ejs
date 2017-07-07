@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cars</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>WELCOME TO MY CARS SHOWROOM</h1>
+
+ <% for (var i = 0; i < Cars.length; i++) { %>
+	<p class="cars"><%= Cars[i].name; %>
+	<a href="/cars/<%= Cars[i].id %>"><button>READ OR DELETE</button></a>
+	<a href="/cars/<%= Cars[i].id %>/update"><button>UPDATE</button></a>
+	</p>
+<% } %>
+
+
+        <p class="create"><a href="/create"><button>Create a car</button></a></p>
+
+
+</body>
+</html>

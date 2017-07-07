@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>campsite</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <header class="jumbotron"><h1>CAMPGROUND SITE IMAGES</h1></header>
+  
+      <% campgrounds.forEach(function(campground) { %>
+    <div> 
+     <h3> <%= campground.name %> </h3> 
+          <img src="<%= campground.image %>">   
+    </div>
+   <% }) %>
+
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scoreBoard</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>TEAMS SCOREBOARD</h1>
+    <form action="scoreBoard" method="POST">
+    <input type="text" name="team1" placeholder="Team1"> 
+    <input type="number" name="team1score" placeholder="Team1score">
+        <B>VS</B>
+    <input type="text" name="team2" placeholder="Team2">
+    <input type="number" name="team2score" placeholder="Team2score">
+    	<input type="submit" name="">
+    </form>
+
+   <% database.forEach(team => { %>
+<ul>
+		<li> <p><%= team.team1 %></p> </li>      
+	        <p><%= team.team1score %></p>        
+	       <li> <p><%= team.team2 %></p> </li>       
+	        <p><%= team.team2score %></p>
+	  
+	</ul>
+<% }) %>
+
+</body>
+</html>

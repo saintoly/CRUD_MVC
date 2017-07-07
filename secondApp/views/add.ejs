@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add a contact</title>
+</head>
+<body>
+	<h1>Add a contact</h1>
+	<form action="/add" method="POST">
+		<input type="text" name="firstname" placeholder="name" required>
+		<input type="number" name="phone" placeholder="phone">
+		<input type="email" name="email" placeholder="email">
+		<input type="submit" name="">
+	</form>
+
+	<% database.forEach( contact => { %>
+		<ul>
+			<li>
+				<p><%= contact.name %></p>
+				<p><%= contact.phone %></p>
+				<p><%= contact.email %></p>
+			</li>
+		</ul>
+	<% }) %>	
+</body>
+</html>

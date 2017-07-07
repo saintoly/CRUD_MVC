@@ -1,0 +1,15 @@
+<%- include ./partials/header.ejs %>
+
+ <div class="container">
+  <header class="jumbotron"><h1>CREATE YOUR CHOICE OF CAR FOR SHOWROOM</h1></header>
+
+
+<form action="/cars/" method="POST">
+   <input type="text" name="name" placeholder="Car Name"> 
+   <input type="text" name="model" placeholder="Model"> 
+   <input type="text" name="country" placeholder="Country"> 
+   <input type="submit" name="">
+</form>
+
+</div>
+<%- include ./partials/footer.ejs %>

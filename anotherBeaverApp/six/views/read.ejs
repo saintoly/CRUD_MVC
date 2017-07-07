@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>cars</title>
+</head>
+<body>
+  <h1>VIEW OR DELETE CAR FROM SHOWROOM</h1>
+ <form action="/cars/<%= car.id %>/delete/" method="POST">
+  <P><%= car.name %></P>
+  <p><%= car.age %></p>
+  <p><%= car.country %></p>
+  <P><%= car.id %></P>
+		<input type="submit" value="Delete Car">
+	</form>
+
+	<p><a href="/"><button>Back to Cars</button></a></p>
+</body>
+</html>

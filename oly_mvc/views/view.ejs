@@ -1,0 +1,13 @@
+<%- include ./partials/header.ejs %>
+
+ <div class="container">
+  <header class="jumbotron"><h1>VIEW CARS IN SHOWROOM</h1></header>
+
+    <h4> <%= car.id %> </h4>
+	<h1><%= car.name %></h1>
+	<h4> <%= car.model %></h4>
+	<h4> <%= car.country %></h4>
+	
+ 	<p><a href="/cars"><button>Back to Cars</button></a></p>
+  </div>
+<%- include ./partials/footer.ejs %>

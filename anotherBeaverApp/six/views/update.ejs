@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update car</title>
+</head>
+<body>
+	<h1>Update car</h1>
+	<form action="/cars/<%= car.id %>/update" method="POST">
+		<input type="text" name="name" value="<%= car.name %>">
+		<input type="text" name="age" value="<%= car.age %>">
+		<input type="text" name="country" value="<%= car.country %>">
+		<input type="submit" value="submit update">
+	</form>
+</body>
+</html>

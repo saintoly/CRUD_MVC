@@ -1,0 +1,15 @@
+<%- include ./partials/header.ejs %>
+
+ <div class="container">
+  <header class="jumbotron"><h1>UPDATE YOUR CHOICE CAR</h1></header>
+
+
+	<form action="/cars/update/<%= car.id %>" method="POST">
+	  <input type="text" name="name" value="<%= car.name %>">
+		<input type="text" name="model" value="<%= car.model %>">
+		<input type="text" name="country" value="<%= car.country %>">
+		<input type="submit" value="submit update">
+	</form>
+
+ </div>
+<%- include ./partials/footer.ejs %>

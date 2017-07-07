@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cars</title>
+</head>
+<body>
+<h1>WELCOME TO MY CARS SHOWROOM</h1>
+
+ <% for (var i = 0; i < Cars.length; i++) { %>
+	<p><%= Cars[i].name; %>
+	<a href="/cars/<%= Cars[i].id %>/update"><button>UPDATE</button></a>
+	</p>
+<% } %>
+
+
+</body>
+</html>

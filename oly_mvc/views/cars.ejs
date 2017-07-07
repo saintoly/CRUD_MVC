@@ -1,0 +1,26 @@
+<%- include ./partials/header.ejs %>
+
+ <div class="container">
+  <header class="jumbotron"><h1>VIEW CARS AND MAKE CHOICE</h1></header>
+
+
+		<a href="/cars/add/"><button>Add a car!</button></a>
+
+		<% cars.forEach( car => { %>
+			<ul>
+				<li> <%= car.name %></li>
+				<li> <%= car.model %></li>
+				<li> <%= car.country %></li>
+				<li><a href="/cars/<%= car.id %>"><button>View Car</button></a></li>
+				<li><a href="/cars/update/<%= car.id %>"><button>Update Car</button></a></li>
+				<li>
+					<form action="/cars/delete/<%= car.id %>" method="POST">
+						<input type="submit" value="Delete Car">
+					</form>
+				</li>
+			</ul>
+		<% }) %>
+
+	</div>
+
+<%- include ./partials/footer.ejs %>
